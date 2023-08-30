@@ -5,6 +5,7 @@ linux-firmware-mellanox
 linux-firmware-nfp
 linux-firmware-qlogic
 
+amd-ucode
 base
 base-devel
 bash-completion
@@ -27,6 +28,15 @@ tlp
 tlp-rdw
 udisks2
 
+amdvlk
+libva-mesa-driver
+libva-vdpau-driver
+libvdpau-va-gl
+mesa
+mesa-vdpau
+vulkan-radeon
+xf86-video-amdgpu
+
 blueman
 bluez
 bluez-hid2hci
@@ -38,12 +48,10 @@ dhclient
 iwd
 modemmanager
 net-tools
-network-manager-applet
 wireless-regdb
 
 git
 
-pavucontrol
 pipewire
 pipewire-alsa
 pipewire-audio
