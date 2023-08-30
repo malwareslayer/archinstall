@@ -5,7 +5,9 @@ wd719x-firmware
 
 all-repository-fonts
 
+amdgpu-pro-oglp
 preload
+vulkan-amdgpu-pro
 
 bluez-utils-compat
 
