@@ -9,7 +9,5 @@ amdgpu-pro-oglp
 preload
 vulkan-amdgpu-pro
 
-bluez-utils-compat
-
 networkmanager-iwd
 networkmanager-iwd-overlay
