@@ -20,7 +20,6 @@ lvm2
 man-db
 pkgfile
 plocate
-reflector
 seatd
 smartmontools
 systemd-resolvconf
