@@ -5,6 +5,7 @@ linux-firmware-mellanox
 linux-firmware-nfp
 linux-firmware-qlogic
 
+intel-ucode
 base
 base-devel
 bash-completion
@@ -28,6 +29,17 @@ systemd-resolvconf
 tlp
 tlp-rdw
 udisks2
+
+libva-intel-driver
+libva-mesa-driver
+libva-vdpau-driver
+libvdpau-va-gl
+mesa
+mesa-vdpau
+vulkan-mesa-layers
+vulkan-icd-loader
+vulkan-intel
+xf86-video-intel
 
 bluez
 bluez-utils
