@@ -42,4 +42,9 @@ homectl update <username> \
     --setenv="GOPATH=$XDG_DATA_HOME/go" \
     
     --setenv="ANDROID_HOME=$HOME/Android" \
+    
+    --setenv="LIBVA_DRIVER_NAME=i915" \
+    --setenv="VDPAU_DRIVER=i915" \
+    --setenv="__GLX_VENDOR_LIBRARY_NAME=i915"
+    --setenv="VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_hasvk_icd.x86_64.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json"
 ```
