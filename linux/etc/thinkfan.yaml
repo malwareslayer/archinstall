@@ -10,5 +10,4 @@ fans:
 
 levels:
   - ["level auto", 55, 65]
-  - ["level disengaged", 60, 70]
-  - ["level fullspeed", 65, 90]
+  - ["level disengaged", 60, 90]
