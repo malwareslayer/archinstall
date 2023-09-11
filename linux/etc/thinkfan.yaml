@@ -1,0 +1,14 @@
+sensors:
+  - hwmon: /sys/devices/platform/thinkpad_hwmon/hwmon
+    indices: [1, 2, 3, 4, 5, 6, 7, 8]
+
+  - tpacpi: /proc/acpi/ibm/thermal
+    indices: [1, 2]
+
+fans:
+  - tpacpi: /proc/acpi/ibm/fan
+
+levels:
+  - [0, 0, 50]
+  - ["level auto", 45, 75]
+  - ["level disengaged", 70, 255]
