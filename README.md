@@ -42,7 +42,13 @@ homectl update <username> \
     --setenv="GOPATH=$XDG_DATA_HOME/go" \
     
     --setenv="ANDROID_HOME=$HOME/Android" \
- 
+    
+    --setenv="MOZ_ENABLE_WAYLAND=1" \
+    --setenv="GDK_BACKEND=wayland,x11" \
+    --setenv="QT_QPA_PLATFORM=wayland;xcb" \
+    --setenv="QT_QPA_PLATFORMTHEME=gtk4" \
+    --setenv="QT_AUTO_SCREEN_SCALE_FACTOR=1" \
+    
     --setenv="LIBVA_DRIVER_NAME=radeonsi" \
     --setenv="VDPAU_DRIVER=radeonsi" \
     --setenv="__GLX_VENDOR_LIBRARY_NAME=amd" \
