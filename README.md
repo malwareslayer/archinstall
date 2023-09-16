@@ -43,6 +43,12 @@ homectl update <username> \
     
     --setenv="ANDROID_HOME=$HOME/Android" \
     
+    --setenv="MOZ_ENABLE_WAYLAND=1" \
+    --setenv="GDK_BACKEND=wayland,x11" \
+    --setenv="QT_QPA_PLATFORM=wayland;xcb" \
+    --setenv="QT_QPA_PLATFORMTHEME=gtk4" \
+    --setenv="QT_AUTO_SCREEN_SCALE_FACTOR=1" \
+    
     --setenv="LIBVA_DRIVER_NAME=i965" \
     --setenv="VDPAU_DRIVER=i965" \
     --setenv="__GLX_VENDOR_LIBRARY_NAME=i965" \
