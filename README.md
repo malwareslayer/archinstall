@@ -14,11 +14,11 @@ Note: Don't use fscrypt (encrypt) if you don't need it and change homed.conf `De
 ```
 # tweak user options: rw,relatime,journal_checksum,delalloc,data=ordered
 
-tmpfs						/tmp            tmpfs		rw,relatime,nodev,nosuid,size=16G 0 0
+tmpfs       /tmp            tmpfs       rw,relatime,nodev,nosuid,size=16G 0 0
 
-/tmp                        /var/tmp        none		rw,relatime,nodev,nosuid,bind 0 0
+/tmp        /var/tmp        none        rw,relatime,nodev,nosuid,bind 0 0
 
-hugetlbfs					/dev/hugepages	hugetlbfs	rw,relatime,mode=01770,gid=kvm 0 0
+hugetlbfs   /dev/hugepages  hugetlbfs	rw,relatime,mode=01770,gid=kvm 0 0
 ```
 
 ### user
@@ -40,7 +40,6 @@ homectl update <username> \
     --setenv="QT_QPA_PLATFORMTHEME=gtk4" \
     --setenv="QT_AUTO_SCREEN_SCALE_FACTOR=1" \
     --setenv="LIBVA_DRIVER_NAME=i965" \
-    --setenv="VDPAU_DRIVER=i965" \
-    --setenv="__GLX_VENDOR_LIBRARY_NAME=i965" \
+    --setenv="VDPAU_DRIVER=va_gl" \
     --setenv="VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_hasvk_icd.x86_64.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json"
 ```
